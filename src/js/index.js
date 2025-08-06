@@ -5,9 +5,9 @@ async function fetchUserData() {
 function loadStylesheet(url) {
 	const link = document.createElement('link')
 	link.rel = 'stylesheet'
-	link.type = 'text/css'
+	link.type = 'text/plain'
 	link.href = url
 	document.head.appendChild(link)
 }
-loadStylesheet('/src/css/test.css')
+loadStylesheet('https://raw.githubusercontent.com/jimbits/wixcss/refs/heads/main/src/css/test.css')
 fetchUserData().then((data) => console.log(data))
